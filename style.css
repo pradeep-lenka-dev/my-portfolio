@@ -1,7 +1,8 @@
 body{
     margin: 0;
     padding: 0;
-    background-color: #000023;
+    background-color:#34353A;
+     /* #000023; */
     /* background-image:url('assests/img01.png'); */
     /* background-position: center; */
     background-repeat: no-repeat;
@@ -11,6 +12,21 @@ body{
 .header{
     color: white;
 }
+.navbar-header {
+    text-decoration: none;
+}
+.navbar-brand {
+    display: inline-block;
+    font-size: 24px; 
+    font-weight: bold; 
+    text-decoration: none;
+    color: #dede3b; 
+    background-image: url('path/to/your/logo.png');
+    background-size: contain; 
+    background-repeat: no-repeat; 
+    padding-left: 40px; 
+    line-height: 50px; 
+}
 .navbar *{
     display: inline;
 }
@@ -18,7 +34,7 @@ body{
     display: flex;
     align-items: center;
     color: white;
-    justify-content: center;
+    justify-content:space-between;
     overflow: hidden;
     text-decoration: none;
     font-size: 17px;
@@ -59,12 +75,13 @@ body{
 }
   
   .rightside img {
+    margin: auto;
     display: block;
-    max-width: 100%;
+    max-width: 60%;
     height: 50%;
     right: 0; 
     top: 0; 
-    border-radius: 25px;
+    border-radius: 5px;
     transition: filter 0.3s ease;
     mix-blend-mode:luminosity;
   }
@@ -74,8 +91,12 @@ body{
     padding: 20px;
 }
 .container .Portfolio{
-    /* background-color: rgb(0,0,26); */
+    margin-top: 5%;
 
+}
+.about_containt{
+    margin: auto;
+    width: 80%;
 }
 .About{
 
@@ -98,12 +119,6 @@ body{
 .About h2{
     color: white;
 }
-.about_containt{
-    margin-left: 80px;
-    /* margin: 10px; */
-    width: 60%;
-    /* padding: 20px; */
-}
 .Skill h2{
 color: white;
 
@@ -117,40 +132,44 @@ color: white;
 .card_container{
     width: 80%;
     margin: auto;
-justify-content: center;
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    justify-content: center;
     /* justify-content:space-around; */
 }
 .card {
+    /* width: 150px;
+    height: 200px; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    flex: 1;
+    /* flex: 1; */
     align-items: center; 
-    background-color: #ffffff;
+    background-color: #3d3e3d;
     padding: 20px; 
-    border-radius: 8px; /* Add rounded corners to the card */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+    border-radius: 8px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
 .card img {
     height: auto; 
     display: block;
     margin: auto;
 }
-.card h2{
-    padding: 20px;
-    color: black;
+.width{
+/* width:min-content; */
 }
+
 .card h2 {
-    /* margin-top: 150px; */
-    /* position: absolute; */
+    padding: 20px;
+    color: white;
     bottom: 10px; 
     left: 0;
     width: 100%;
     text-align: center; 
     margin: 0; 
+    text-wrap:wrap;
   }
 footer{
     background-color: black;
@@ -166,3 +185,29 @@ footer{
     text-align: center;
     color:white;
 }
+
+
+.cards_container {
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(20%, 1fr));
+    gap: 20px;
+    align-items: center;
+  }
+  
+  .cards {
+    /* background-color: #ffffff; */
+    /* padding: 20px; */
+    margin: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .cards img {
+    width: 100%; /* Make the image fill the entire width of the card */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+    border-radius: 8px; /* Add rounded corners to the image if needed */
+  }
+  

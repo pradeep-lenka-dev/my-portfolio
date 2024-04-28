@@ -1,10 +1,6 @@
 body{
     margin: 0;
     padding: 0;
-    /* background-color:#34353A; */
-     /* #000023; */
-    /* background-image:url('assests/img01.png'); */
-    /* background-position: center; */
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -12,8 +8,7 @@ body{
 .header{
     color: white;
     background-color:#34353A;
-    box-shadow: 0 8px 16px rgba(195, 11, 11, 0.3); 
-    z-index: -1;
+  box-shadow: 10px 7px 20px red ;
     /* box-shadow: rgba(225, 22, 22, 0.45) 50px 65px 70px 90px; */
 
 }
@@ -162,10 +157,10 @@ color: white;
     background-color: #3d3e3d;
     padding: 20px; 
     border-radius: 15px; 
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .skill-card img {
+    width: 150px;
     height: auto; 
     display: block;
     margin: auto;
@@ -190,6 +185,9 @@ color: white;
     
     margin: auto;
     display: flex;
+
+    flex-direction: row;
+    justify-content: space-between;
     /* flex-wrap: wrap; */
     gap: 20px;
     align-items: center;
@@ -209,7 +207,6 @@ color: white;
     /* padding: 20px; */
     margin: auto;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     align-items: center;
   }
 
@@ -233,7 +230,9 @@ footer{
 .mob{
     display: none;
 }
-@media screen and (min-width:400px) {
+
+@media screen and (max-width: 600px) {
+
 .navbar-brand{
     display: none !important;
 }
@@ -271,6 +270,18 @@ footer{
   }
   .heading {
     font-size: 25px;
+  }
+  .skill-card{
+    height: 200px; 
+    width: 30%;
+
+  }
+
+  .skill-card img {
+    width: 100px;
+}
+.portfolio-container {
+    flex-direction: column;
   }
 
 }

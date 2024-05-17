@@ -12,6 +12,16 @@ body{
     /* box-shadow: rgba(225, 22, 22, 0.45) 50px 65px 70px 90px; */
 
 }
+nav.sticky{
+  /* background-color: white; */
+  /* position: fixed;
+  z-index: 1; */
+  
+}
+.sticky li a{
+ 
+  /* color: rgb(10, 10, 10) !important; */
+}
 .main-container{
     background-color: #31333B;
 
@@ -53,7 +63,7 @@ body{
 
     margin:  20px;
     text-decoration: none;
-    color: white;
+    color: white
 }
 .hero{
     display: flex;

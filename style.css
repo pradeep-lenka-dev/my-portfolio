@@ -359,7 +359,14 @@ gap: 40px;
   .icon-conainer span{
     margin: 10px;
 
+
+
   }
+  .icon-conainer span a{
+    color: white !important;
+    text-decoration: none;
+  }
+
 
 footer{
     background-color: black;
